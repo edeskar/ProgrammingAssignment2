@@ -1,9 +1,13 @@
-## Put comments here that give an overall description of what your
-## functions do
+## Put comments here that give an overall description of what your functions do
+
+## The function takes a matrix as an argument and caches the inverse of that matrix.
+## The cahced inverse can be called by the helper functions.
+##__________________________________________________________
 
 ## Write a short comment describing this function
-## Create an empty matrix container that can cache the inverse matrix.
-## set 
+## makeCacheMatrix creates an empty matrix container that can cache the inverse matrix.
+## It also defines helpfumcyions for the solving function cacheSolve.
+## The helping functions can be be called separatly to check the input before solving.
 
 makeCacheMatrix <- function(x = matrix()) {
   ## create an empty container matrix
@@ -26,7 +30,8 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Executes and returns the iverse matrix. Also checks if the input matrix is already solved. If so it returns the iverse matrix form the cache.
+## cacheSolve executes and returns the iverse matrix. Also checks if the input matrix is already solved. 
+## If so it returns the iverse matrix form the cache.
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
